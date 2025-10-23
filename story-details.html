@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تفاصيل القصة</title>
+<link rel="stylesheet" href="story-details.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="story-header">
+    <p class="story-meta">
+      <span class="badge"></span> | الفئة: <span class="story-category"></span> | تاريخ النشر: <span class="story-date"></span>
+    </p>
+    <h1 class="story-title"></h1>
+  </div>
+
+  <!-- Scorecards -->
+  <div class="scorecards-grid">
+    <div class="scorecard">
+        <div class="number">40%</div>
+        <div class="label">زيادة في كفاءة التشغيل</div>
+    </div>
+    <div class="scorecard">
+        <div class="number">3,000</div>
+        <div class="label">ساعة عمل تم توفيرها سنوياً</div>
+    </div>
+    <div class="scorecard">
+        <div class="number">100%</div>
+        <div class="label">رضا الموظفين عن النظام الجديد</div>
+    </div>
+  </div>
+
+  <!-- المحتوى -->
+  <div class="story-content">
+    <div class="story-main">
+      <div class="story-text">
+        <p class="story-summary"></p>
+      </div>
+    </div>
+
+    <div class="story-section story-background"></div>
+    <div class="story-section story-challenges"></div>
+    <div class="story-section story-activities"></div>
+    <div class="story-section story-achievements"></div>
+  </div>
+
+  <!-- 🔹 قسم عرض الصور والفيديوهات -->
+ <!-- قسم عرض الصور والفيديوهات -->
+<section class="story-media">
+  <h2>الصور والفيديوهات</h2>
+  <div class="media-grid">
+
+    <!-- بطاقة الصورة -->
+    <div class="story-summary-card">
+      <img src="MMM.jpg" alt="صورة القصة">
+      <h3>عنوان الصورة</h3>
+      <p>وصف مختصر للصورة.</p>
+    </div>
+
+    <!-- بطاقة الفيديو -->
+    <div class="video-summary-card">
+      <video controls>
+       <source src="MMN.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو
+      </video>
+      <h3>عنوان الفيديو</h3>
+      <p>وصف مختصر للفيديو.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- التفاعل ومشاركة القصة -->
+  <div class="interaction-footer">
+    <div class="social-shares">
+        <p style="margin:0; font-weight:bold;">شارك هذه القصة:</p>
+        <a href="#" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    
+  </div>
+
+  <!-- التنقل بين القصص -->
+  <div class="story-navigation">
+    <a href="story-details-0.html" class="nav-link nav-prev"><i class="fas fa-arrow-right"></i> القصة السابقة</a>
+    <a href="story-details-2.html" class="nav-link nav-next">القصة التالية <i class="fas fa-arrow-left"></i></a>
+    <a href="stories.html" class="nav-link nav-next">« العودة إلى قائمة القصص</a>
+  </div>
+</div>
+
+<!-- 🔹 Lightbox للصور -->
+<div class="lightbox-overlay" id="lightbox-overlay" onclick="closeLightbox()">
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="MMM.jpg" alt="صورة مكبرة">
+  </div>
+</div>
+
+<script src="story-details.js"></script>
+</body>
+</html>
